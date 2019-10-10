@@ -21,12 +21,23 @@ body {background-color :white; }
   width:200px ;
   height:200px;
  }
- 
+ .zoom {
+  background-color:white;
+  transition: transform .2s;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
 </style>
 
 <body>
 <h1> Hello , welcome to my GITHUB page ! </h1>
  <h2> My name is Puneet </h2> 
- <img src = "IMG_9422.JPG" >
+ <img class ="zoom" src = "IMG_9422.JPG" >
 </body>
 </html>
