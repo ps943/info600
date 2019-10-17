@@ -1,3 +1,4 @@
+ 
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,31 +16,23 @@ Solution for Assignment 2, question 2
 h1,h2, h3 { color: Blue;
  text-align: center ;
 }
-
+ 
+ button { color:blue:} ; 
 body {background-color :white; }
- img { 
-  width:200px ;
-  height:200px;
- }
- .zoom {
-  background-color:white;
-  transition: transform .2s;
-  width: 300px;
-  height: 300px;
-  margin: auto;
-  display:block;
-  align:center ; 
-}
-.zoom:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5);
-}
 </style>
 
 <body>
-<h1> Hello , welcome to my GITHUB page ! </h1>
- <h2> My name is Puneet </h2> 
- <img class ="zoom" src = "IMG_9422.JPG" >
+<h1> Button </h1>
+ 
+<button id="oneb" onclick="myFunction()">Click me</button>
+
+ <script>
+document.getElementById("oneb").onclick = function() {myFunction()};
+  function myFunction() {
+  document.getElementById("demo").style.color = "red";
+}
+</script>
+
+ 
 </body>
 </html>
