@@ -17,20 +17,16 @@ h1,h2, h3 { color: Blue;
  text-align: center ;
 }
  
- button { color:blue:} ; 
+ button { background-color:blue:} ; 
 body {background-color :white; }
 </style>
 
 <body>
 <h1> Button </h1>
  
-<button id="oneb" onclick="myFunction()">Click me</button>
-
+<button onclick="document.body.style.backgroundColor = 'red';">click me </button>
+ 
  <script>
-document.getElementById("oneb").onclick = function() {myFunction()};
-  function myFunction() {
-  document.getElementById("demo").style.color = "red";
-}
 </script>
 </body>
 </html>
