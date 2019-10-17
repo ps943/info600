@@ -26,11 +26,12 @@ body {background-color :black; }
 <body>
 <h1> Button </h1>
  
-<button id ="button1" class ="buttonC" onclick="myFunction()"> Click me </button>
- 
+<button onclick="submitButtonStyle(this)" type="submit" class="stylebutton"> 
+Submit </button>
  <script>
-  function myfunction() {
-   document.getElementById("button1").style.backgroundColor = "#A9A9A9";} 
+  function submitButtonStyle(_this) {
+  _this.style.backgroundColor = "red";
+}
   
 </script>
 </body>
