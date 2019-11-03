@@ -26,7 +26,7 @@
 					var studentmajor = document.myform.major.value;
 					if (studentname.length == 0)
 					 {
-// if variable length is zero, meaning space, test is set to false and notification is initialed with message
+// if variable length is zero, meaning space, alert box is pop-up for entering student name or major 
 						test = false;
 						notification += "Please enter the student name.\n";
 					 }
@@ -43,6 +43,7 @@
 						return test;
 				}
 
+// Validating the year less than 2000 or more than 4 digits
 
 		function validateYear()
 			{
@@ -54,9 +55,14 @@
 					testyear = false;
 					notification +=" Please enter year greater than 2000"
 				}
+				else if (enteredyear.length>4)
+               			 {
+                			testyear = false;
+					notification +=" Please enter a valid year"
+               			 }
 				if (!testyear)
 						 {
-							 alert(notification);
+						alert(notification);
 								 }
 				 return testyear;
 			 }
