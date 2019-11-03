@@ -1,27 +1,25 @@
 
-				function doSubmit()
+		function doSubmit()
+			{
+			if (validateText() && validateYear() )
 				{
-
-					if (validateText() && validateYear() )
-					{
-            var mydate = new Date();
-  					var n = mydate.getHours();
-  					var k = mydate.getMinutes();
-   document.getElementById('form-value').innerHTML += '<p>'+ n+":"+k+" "+ document.myform.fullName.value + " " + document.myform.major.value + " " + document.myform.startYear.value + " " + "</p>";
-	 document.myform.fullName.value = "";
-	 document.myform.major.value = "";
-	 document.myform.startYear.value = "";
+            			var mydate = new Date();
+  				var n = mydate.getHours();
+  				var k = mydate.getMinutes();
+   				document.getElementById('form-value').innerHTML += '<p>'+ n+":"+k+" - "+ document.myform.fullName.value + " , " + document.myform.major.value + " , " + document.myform.startYear.value + "  " + "</p>";
+				document.myform.fullName.value = "";
+	 			document.myform.major.value = "";
+	 			document.myform.startYear.value = "";
 				  }
 
 				 return false;
-
-			 }
+			}
 			 
 // textbox validation function
 
 
-			function validateText()
-					 {
+		function validateText()
+				 {
 					var test = true;
 					var notification = "";
 					var studentname =  document.myform.fullName.value;
@@ -39,13 +37,14 @@
 					 }
 				   if (!test)
 // printing the notification on alertbox
-								{ alert(notification);
-										}
+						{ 
+							alert(notification);
+						}
 						return test;
-					}
+				}
 
 
-			function validateYear()
+		function validateYear()
 			{
 				var testyear = true;
 				var notification ="";
