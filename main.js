@@ -53,7 +53,7 @@
 				if(enteredyear<2000)
 				{
 					testyear = false;
-					notification +=" Please enter year greater than 2000"
+					notification +=" Error : Entered year "+enteredyear+" is less than 2000 "
 				}
 				else if (enteredyear.length>4)
                			 {
