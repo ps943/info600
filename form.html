@@ -8,28 +8,34 @@ Solution  for Assignment 2
 <html>
 	<head>
 		<title>Student Record</title>
-		
+		<link rel="stylesheet" href="css/main.css">
 	</head>
  
   	<body>
 
+<h1>Student Information record</h1>
 
-		   <form name="myform">
+<h4>Please enter student name, major and year</h4>
 
-			        <h1>Student Information record</h1>
 
-			  	    <h4>Step 1: Please enter student name, major and year:</h4>
+<form name="myform">
+<font size= "5px">
 
           <p>
         	Name: &nbsp;&nbsp;&nbsp;<input name="fullName" id="fullName" size="30" type="text" />
-					Major: <input name="major" id="major" size="30"   type="text" />
-        	Year : &nbsp;&nbsp;&nbsp;<input name="startYear" id="startYear" size="4" type="text" />
-					<input type="button" id="addRec" value="Add Record" onClick='doSubmit(); return false' />
-		      </p>
-      </form>
+		Major: <input name="major" id="major" size="30"   type="text"/>
+        	Year : &nbsp;&nbsp;&nbsp;<input name="startYear" id="startYear" size="4" type="text"/>
+		<input type="button" id="addRec" value="Add Record" onClick='doSubmit(); return false' />
+	  </p>
+	
+ </form>
+		
 <div id="form-value">
 </div>
+		
   <script src="main.js"></script>
-  </body>
+		
+</body>
+	
  
 </html>
